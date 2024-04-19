@@ -5,7 +5,7 @@ public class Podcast extends Audio {
     private String description;
 
     @Override
-    public int getClassifi() {
+    public int getClassification() {
         if(getTotalPlays() >=2000){
             return 9;
         }else {
