@@ -1,6 +1,17 @@
+package com.aluracurso.radio.models;
+
 public class Podcast extends Audio {
     private String presenter;
     private String description;
+
+    @Override
+    public int getClassifi() {
+        if(getTotalPlays() >=2000){
+            return 9;
+        }else {
+            return 2;
+        }
+    }
 
     public String getPresenter() {
         return presenter;

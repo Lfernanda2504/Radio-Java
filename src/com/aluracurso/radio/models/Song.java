@@ -1,7 +1,18 @@
+package com.aluracurso.radio.models;
+
 public class Song extends Audio {
     private String album;
     private String singer;
     private String genre;
+
+    @Override
+    public int getClassification() {
+        if (getTotalLikes()>5000){
+            return 8;
+        }else {
+            return 4;
+        }
+    }
 
     public String getAlbum() {
         return album;

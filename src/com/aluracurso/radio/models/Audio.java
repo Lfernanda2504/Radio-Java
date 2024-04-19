@@ -1,3 +1,5 @@
+package com.aluracurso.radio.models;
+
 public class Audio {
     private String title;
     private int totalPlays;
